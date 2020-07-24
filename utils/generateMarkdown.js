@@ -1,7 +1,8 @@
 // function to generate markdown for README
+//this function is used to create a structure of a README file
+
 function generateMarkdown(data) {
- return `
- 
+ return ` 
   ${data.badge}
   # ${data.project_name}
   ## ${data.git_hub_username}
@@ -43,11 +44,10 @@ function generateMarkdown(data) {
   
   ${data.questions}
 
-  https://github.com/${data.git_hub_username}
+  https://github.com/${data.git_hub_username}/${data.project_name}
   
   ${data.email}
 `;
 }
 
 module.exports = generateMarkdown;
-//test this function on the title
